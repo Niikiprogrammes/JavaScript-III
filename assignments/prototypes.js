@@ -41,7 +41,7 @@
 
 // Test you work by un-commenting these 3 objects and the list of console logs below:
 
-/*
+
   const mage = new Humanoid({
     createdAt: new Date(),
     dimensions: {
@@ -51,7 +51,8 @@
     },
     healthPoints: 5,
     name: 'Bruce',
-    team: 'Mage Guild',
+    
+    faction: 'Mage Guild',
     weapons: [
       'Staff of Shamalama',
     ],
@@ -67,7 +68,7 @@
     },
     healthPoints: 15,
     name: 'Sir Mustachio',
-    team: 'The Round Table',
+    faction: 'The Round Table',
     weapons: [
       'Giant Sword',
       'Shield',
@@ -84,25 +85,22 @@
     },
     healthPoints: 10,
     name: 'Lilith',
-    team: 'Forest Kingdom',
+    faction: 'Forest Kingdom',
     weapons: [
       'Bow',
       'Dagger',
     ],
     language: 'Elvish',
   });
-
-  console.log(mage.createdAt); // Today's date
-  console.log(archer.dimensions); // { length: 1, width: 2, height: 4 }
-  console.log(swordsman.healthPoints); // 15
-  console.log(mage.name); // Bruce
-  console.log(swordsman.team); // The Round Table
-  console.log(mage.weapons); // Staff of Shamalama
-  console.log(archer.language); // Elvish
-  console.log(archer.greet()); // Lilith offers a greeting in Elvish.
-  console.log(mage.takeDamage()); // Bruce took damage.
-  console.log(swordsman.destroy()); // Sir Mustachio was removed from the game.
-*/
+  console.log (swordsman.hp);
+  console.log(mage.name);
+  console.log(swordsman.faction);
+  console.log(mage.weapons);
+  console.log(archer.language);
+  Console.log(archer.greet);
+  console.log(mage.takeDamage);
+  console.log(swordsman.destroy);
+  
 
   // Stretch task: 
   // * Create Villain and Hero constructor functions that inherit from the Humanoid constructor function.  
